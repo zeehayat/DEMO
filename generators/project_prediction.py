@@ -103,7 +103,7 @@ df = pd.DataFrame(data, columns=[
     'Growth Rate', 
     'Need New Infrastructure'
 ])
-
+#df.to_csv('../DATA/infrastructure_deliverables.csv', index=False)
 # Convert categorical data into numerical using one-hot encoding
 df_encoded = pd.get_dummies(df, columns=[
     'Settlement Name', 'Project Type', 'Project Status', 'Infrastructure Level', 
